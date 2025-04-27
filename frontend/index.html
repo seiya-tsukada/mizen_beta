@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ダッシュボード</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- サイドバー -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="logo">Dashboard</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                            <span>ホーム</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-chart-line"></i>
+                            <span>分析</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            <span>設定</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- メインコンテンツ -->
+        <main class="main-content">
+            <!-- ヘッダー -->
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="検索...">
+                </div>
+                <div class="user-info">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="user-profile">
+                        <img src="assets/avatar.jpg" alt="ユーザーアバター">
+                        <span>ユーザー名</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- ダッシュボードコンテンツ -->
+            <div class="dashboard-content">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>総ユーザー数</h3>
+                            <p>1,234</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>売上</h3>
+                            <p>¥1,234,567</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>コンバージョン率</h3>
+                            <p>45%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="charts-container">
+                    <div class="chart-card">
+                        <h2>売上推移</h2>
+                        <div class="chart" id="salesChart">
+                            <!-- チャートはJavaScriptで描画 -->
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <h2>ユーザー分布</h2>
+                        <div class="chart" id="userDistributionChart">
+                            <!-- チャートはJavaScriptで描画 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent-activity">
+                    <h2>最近のアクティビティ</h2>
+                    <div class="activity-list">
+                        <!-- アクティビティリストはJavaScriptで動的に生成 -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
